@@ -4,7 +4,7 @@ import { findDOMNode } from 'react-dom';
 import { addClass, removeClass } from 'dom-lib';
 
 
-const DragContainer = React.createClass({
+const DropContainer = React.createClass({
     PropTypes: {
         onMouseEnter: PropTypes.func,
         onMouseLeave: PropTypes.func
@@ -38,4 +38,4 @@ const DragContainer = React.createClass({
         );
     }
 });
-export default DragContainer;
+export default DropContainer;

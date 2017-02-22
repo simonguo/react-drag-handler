@@ -1,16 +1,15 @@
 {
   "name": "react-drag-handler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Drap for React",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline --progress --colors --port 3100 --host 0.0.0.0 --config webpack.config.js",
-    "build": "rm -rf lib && babel src --out-dir lib && cp -R src/less lib",
+    "build": "rm -rf lib && babel src --out-dir lib ",
     "tdd": "karma start",
     "lint": "eslint src  *.js",
     "test-node": "mocha --compilers js:babel-register test/*Spec.js",
     "test": "npm run lint && cross-env NODE_ENV=test karma start --single-run",
-    "cp:docs": "cp ./assets/* ../rsuite.github.io/rsuite-tree/",
-    "publish": "npm run docs && npm run cp:docs"
+    "cp:docs": "cp ./assets/* ../rsuite.github.io/rsuite-tree/"
   },
   "main": "lib/index.js",
   "author": "Simon Guo <simonguo.2009@gmail.com>",
@@ -22,7 +21,8 @@
     "react-dom": "^0.14.2"
   },
   "keywords": [
-    "tree",
+    "drag",
+    "drop",
     "react",
     "rsuite"
   ],

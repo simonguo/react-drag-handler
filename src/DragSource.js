@@ -2,7 +2,7 @@ import React from 'react';
 import { findDOMNode } from 'react-dom';
 import { DOMMouseMoveTracker, getHeight, getWidth, addStyle } from 'dom-lib';
 
-const DragHandler = React.createClass({
+const DragSource = React.createClass({
     propTypes: {
         onDragMove: React.PropTypes.func,
         onDragEnd: React.PropTypes.func,
@@ -77,4 +77,4 @@ const DragHandler = React.createClass({
     }
 });
 
-export default DragHandler;
+export default DragSource;
