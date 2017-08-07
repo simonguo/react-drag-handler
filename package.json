@@ -1,6 +1,6 @@
 {
   "name": "react-drag-handler",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Drap for React",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline --progress --colors --port 3100 --host 0.0.0.0 --config webpack.config.js",
@@ -14,12 +14,6 @@
   "main": "lib/index.js",
   "author": "Simon Guo <simonguo.2009@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "classnames": ">=2.0.0",
-    "dom-lib": "0.0.14",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2"
-  },
   "keywords": [
     "drag",
     "drop",
@@ -29,6 +23,14 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:simonguo/react-drag-handler.git"
+  },
+  "dependencies": {
+    "classnames": ">=2.0.0",
+    "dom-lib": "^0.2.3"
+  },
+  "peerDependencies": {
+    "react": "^0.14.9 || >=15.3.0",
+    "react-dom": "^0.14.9 || >=15.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.1.0",
