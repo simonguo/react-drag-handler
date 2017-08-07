@@ -1,2 +1,2 @@
 export DropContainer from './DropContainer';
-export DragHandler from './DragHandler';
+export DragSource from './DragSource';

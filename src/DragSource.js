@@ -18,7 +18,7 @@ const DragSource = React.createClass({
     },
     hanldeDragMove(deltaX, deltaY, event) {
         const { onDragMove } = this.props;
-        if (this._mouseMoveTracker.isDragging()) {
+        if (this._mouseMoveTracker && this._mouseMoveTracker.isDragging()) {
             const dragmover = findDOMNode(this.dragmover);
             const height = getHeight(dragmover);
             const width = getWidth(dragmover);
@@ -33,7 +33,7 @@ const DragSource = React.createClass({
         }
     },
     hanldeDragEnd() {
-        const {onDragEnd} = this.props;
+        const { onDragEnd } = this.props;
         const dragmover = findDOMNode(this.dragmover);
         addStyle(findDOMNode(this.dragmover), {
             display: 'none'
